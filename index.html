@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 id="title">Survey Form For CSS Practice</h1>
+  <p id="description">Lütfen formu eksiksiz doldurun.</p>
+
+  <form id="survey-form">
+
+    <label id="name-label" for="name">Full Name</label>
+    <input id="name" type="text" placeholder="Ad Soyad" required>
+
+    <label id="email-label" for="email">Mail</label>
+    <input id="email" type="email" placeholder="mail@example.com" required>
+
+    <label id="number-label" for="number">Age</label>
+    <input id="number" type="number" min="18" max="60" placeholder="18-60" required>
+
+    <label for="dropdown">Select Gender</label>
+    <select id="dropdown">
+      <option value="">Seçiniz</option>
+      <option value="female">Female</option>
+      <option value="male">Male</option>
+    </select>
+
+    <p>Where did you hear us?</p>
+    <input type="radio" name="source" value="instagram"> Instagram
+    <input type="radio" name="source" value="linkedin"> LinkedIn
+
+    <br><br>
+
+    <input type="checkbox" value="terms"> Terms Of Service
+    <input type="checkbox" value="subscribe"> Subscribe For News
+
+    <br><br>
+
+    <textarea placeholder="Suggestions"></textarea>
+
+    <br><br>
+
+    <input id="submit" type="submit" value="Sign Up">
+
+  </form>
+
+</body>
+</html>
